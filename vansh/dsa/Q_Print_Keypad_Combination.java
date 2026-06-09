@@ -7,7 +7,7 @@ public class Q_Print_Keypad_Combination {
 
     public static void printCom(String s,int idx,String Combination){
         if (idx==s.length()){
-            System.out.println(Combination);
+            System.out.println("Possible Combinations "+Combination);
             return;
         }
 

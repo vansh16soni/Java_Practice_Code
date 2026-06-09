@@ -8,17 +8,19 @@ public class Q_Find_Occurence {
 
     public static void FindOcc(String s, int idx, char element){
         if (idx==s.length()){
-            System.out.println(First);
-            System.out.println(Last);
+            System.out.println("First Occurence: "+First);
+            System.out.println("Last Occurence: "+Last);
             return;
         }
 
         char curr=s.charAt(idx);
-        if (curr==element){
-            if (First==-1){
-                First=idx;
+        if (curr == element) {
+            if (First == -1) {
+                First = idx;
+                Last = idx;
+            } else {
+                Last = idx;
             }
-            else Last=idx;
         }
         FindOcc(s,idx+1,element);
     }

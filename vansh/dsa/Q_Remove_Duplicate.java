@@ -8,7 +8,7 @@ public class Q_Remove_Duplicate {
 
     public static void removeDup(String a, int idx, String newa) {
         if (idx == a.length()) {
-            System.out.println(newa);
+            System.out.println("Updated array: "+newa);
             return;
         }
         char cur = a.charAt(idx);
@@ -26,7 +26,8 @@ public class Q_Remove_Duplicate {
         System.out.println("Enter the string: ");
         String s = vc.nextLine();
 
-        Arrays.fill(map, false); // reset before use
+        // reset before use
+        Arrays.fill(map, false);
         removeDup(s, 0, "");
     }
 }
